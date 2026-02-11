@@ -17,7 +17,6 @@ To monitor Linux authentication logs and detect failed login attempts using Kali
 Command:
 sudo apt install openssh-server -y
 
-![SSH Installation](screenshots/01_ssh_installation.png)
 
 ---
 
@@ -27,7 +26,6 @@ Commands:
 sudo systemctl start ssh
 sudo systemctl status ssh
 
-![SSH Service Status](screenshots/02_ssh_service_status.png)
 
 Observation:
 SSH service is active and running.
@@ -44,7 +42,6 @@ Entered incorrect passwords multiple times.
 Result:
 Permission denied (publickey,password)
 
-![Failed Login Attempt](screenshots/03_failed_login_attempt.png)
 
 ---
 
@@ -56,7 +53,6 @@ sudo journalctl -u ssh | grep "Failed password"
 Observation:
 Multiple failed authentication entries detected.
 
-![Failed Password Logs](screenshots/04_failed_password_logs.png)
 
 ---
 
@@ -68,7 +64,6 @@ sudo journalctl | grep "Failed password" | wc -l
 Result:
 4 failed login attempts detected.
 
-![Failed Attempt Count](screenshots/05_failed_attempt_count.png)
 
 ---
 
@@ -83,7 +78,6 @@ Result:
 Meaning:
 All failed attempts originated from localhost (::1 IPv6 loopback address).
 
-![IP Address Count](screenshots/06_ip_address_count.png)
 
 ---
 
