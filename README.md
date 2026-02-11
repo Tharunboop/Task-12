@@ -91,7 +91,6 @@ All failed attempts originated from localhost (::1 IPv6 loopback address).
 - SSH authentication logs
 - systemd journal logs
 
----
 
 ## 🚨 Findings
 - 4 failed login attempts detected.
@@ -99,7 +98,7 @@ All failed attempts originated from localhost (::1 IPv6 loopback address).
 - Demonstrated brute-force login simulation.
 - Successfully correlated authentication events.
 
----
+
 
 ## ✅ Conclusion
 Log monitoring and analysis was successfully performed.
